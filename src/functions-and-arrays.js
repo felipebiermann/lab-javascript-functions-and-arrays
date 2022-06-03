@@ -110,13 +110,20 @@ const wordsUnique = [
   'bring'
 ];
 
+
 function uniquifyArray(arrFilter) {
   if (arrFilter.length === 0) {
     return null;
   }
+
+  let filteredArr = [];
+  for (let i = 0; i < arrFilter.length; i++){
+    if (filteredArr.indexOf(arrFilter[i]) === -1 ){
+  filteredArr.push(arrFilter[i]);
 }
-
-
+}
+return filteredArr;
+}
 
 
 // Iteration #6: Find elements
